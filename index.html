@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>amazon-page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -15,19 +16,19 @@
             <span class="navbar-toggler-icon"></span>
           </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav container-fluid justify-content-between align-items-center">
             <li class="nav-item localizacao">
               <a class="nav-link active" aria-current="page" href="#">
-                <span>Entrega será feita em xiq-xiq Bahia</span>
+                <span class="texto-header-normal">Entrega será feita em xiq-xiq Bahia</span>
                 <div>
                   <img src="" alt="icon-localizacao">
-                  <span class="texto-normal-negrito">Atualizar CEP</span>
+                  <span class="texto-header-bold">Atualizar CEP</span>
                 </div>
               </a>
             </li>
-            <li class="nav-item">
-              <div class="container-fluid">
-                <form class="d-flex" role="search">
+            <li class="nav-item caixa-pesquisa w-50">
+              <div class="container-fluid ">
+                <form class="d-flex " role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
@@ -39,7 +40,7 @@
                   <span class="texto-pequeno">Olá, faça seu login</span>
                 </div>
                 <div>
-                  <span class="texto-normal-negrito">Contas e Listas</span>
+                  <span class="texto-header-bold">Contas e Listas</span>
                 </div>
               </a>
               <ul class="dropdown-menu">
@@ -54,19 +55,32 @@
                   <span class="texto-pequeno">Devoluções</span>
                 </div>
                 <div>
-                  <span class="texto-normal-negrito">e Pedidos</span>
+                  <span class="texto-header-bold">e Pedidos</span>
                 </div>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-normal-negrito" href="#">Carrinho</a>
+              <a class="nav-link texto-header-bold" href="#">Carrinho</a>
             </li>
-            
           </ul>
         </div>
       </div>
     </nav>
   </header>
+  <main>
+    <section id="pagina-principal">
+      <div class="container-xxl text-center">
+        <div class="row">
+          <div class="col">
+            Column
+          </div>
+        </div>
+        <div class="row">
+
+        </div>
+      </div>
+    </section>
+  </main>
 
 
 
