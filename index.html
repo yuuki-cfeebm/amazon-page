@@ -5,13 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>amazon-page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark"> <!--componente navbar-->
       <div class="container-fluid">
-        <a class="navbar-brand logo-amazon" href="#">logo-amazon</a>
+        <a class="navbar-brand logo-amazon" href="#">
+          <div class="container-logo-amazon">
+            <img src="img/logo-amazon.png" alt="logo-amazon">
+          </div>
+        </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -217,9 +221,55 @@
         </div>
       </div>
     </section>
-    <section id="section-categorias">
-      <div class="row">
-        
+    <section id="section-categoria">
+      <div class="container-section-categoria">
+        <div class="categoria-header">
+          <p>Navegue pelas categorias, de A a Z</p>
+        </div>
+        <div class="categoria-body">
+          <button 
+            class="button btn-voltar">
+            <img src="img/arrow-left.svg" alt="botao-voltar">
+          </button>
+          <div class="categoria-carousel">
+            <a class="categoria" href="">
+              <div class="container-img-categoria">
+                <img src="img/categoria-dispositivos.jpg" alt="categoria-dispositivos">
+              </div>
+              <span class="nome-categoria">
+                Dispositivos
+              </span>
+            </a>
+            <a class="categoria" href="">
+              <div class="container-img-categoria">
+                <img src="img/categoria-cuidados.jpg" alt="categoria-dispositivos">
+              </div>
+              <span class="nome-categoria">
+                Cuidados Pessoais
+              </span>
+            </a>
+            <a class="categoria" href="">
+              <div class="container-img-categoria">
+                <img src="img/categoria-livros.jpg" alt="categoria-dispositivos">
+              </div>
+              <span class="nome-categoria">
+                Livros
+              </span>
+            </a>
+            <a class="categoria" href="">
+              <div class="container-img-categoria">
+                <img src="img/categoria-nacional.avif" alt="categoria-dispositivos">
+              </div>
+              <span class="nome-categoria">
+                Compras Internacionais
+              </span>
+            </a>
+          </div>
+          <button
+            class="button btn-avancar">
+            <img src="img/arrow-right.svg" alt="botao-avancar">
+          </button>
+        </div>
       </div>
     </section>
   </main>
