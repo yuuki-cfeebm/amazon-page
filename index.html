@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!--componente navbar-->
       <div class="container-fluid">
         <a class="navbar-brand logo-amazon" href="#">logo-amazon</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,16 +68,17 @@
     </nav>
   </header>
   <main>
-    <div id="section-cards" class="">
+    <div id="section-cards position-relative">
       <div class="row container-fluid justify-content-center">
-        <div class="col-10">
-          <div id="carouselExample" class="carousel slide"> <!--carroussel-->
-            <div class="carousel-inner">
+        <div class="container-section-carroussel">
+          <div id="carouselExample" class="carousel slide "> <!--componente carroussel-->
+            <div class="carousel-inner ">
               <div class="carousel-item active">
                 <img src="img/carroussel-amazonPrime.png" class="d-block w-100" alt="amazonPrime">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item position-relative">
                 <img src="img/carroussel-celular.png" class="d-block w-100" alt="celular">
+                <div class="gradient-carroussel"></div>
               </div>
               <div class="carousel-item">
                 <img src="img/carroussel-diaDasCriancas.png" class="d-block w-100" alt="dia-das-criancas">
@@ -94,153 +95,114 @@
           </div>
         </div>
       </div>
-      <div class="row"> <!--cards-->
-        <!-- <div class="col-2">
-          <div class="card-header">
-            <p class="titulo-card">Ofertas melhores avaliadas</p>
-          </div>
-          <div class="card-conteudo">
-
-          </div>
-          <div class="card-footer">
-
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card-header">
-            <p class="titulo-card">Ofertas melhores avaliadas</p>
-          </div>
-          <div class="card-conteudo">
-            <div>
-              <img src="img/card-televisao.png" alt="televisao-1">
-              <div class="desconto">
-                <span>9% off</span>
-                <p>Oferta</p>
+      <div class="row container-fluid justify-content-center top-50 position-absolute">
+        <div class="container-section-cards">
+          <div class="tamanho-card">
+            <div class="ofertas-linha">
+              <div class="produto">
+                <div class="container-img-produto">
+                  <img src="img/card-televisao.png" alt="televisao-1">
+                </div>
+                <div class="desconto">
+                  <span>9% off</span>
+                  <p>Oferta</p>
+                </div>
+              </div>
+              <div class="produto">
+                <div class="container-img-produto img-celular">
+                  <img src="img/card-celular.png" alt="televisao-1">
+                </div>
+                <div class="desconto">
+                  <span>9% off</span>
+                  <p>Oferta</p>
+                </div>
               </div>
             </div>
-            <div>
-              <img src="img/card-celular.png" alt="celular">
-              <div class="desconto">
-                <span>9% off</span>
-                <p>Oferta</p>
+            <div class="ofertas-linha">
+              <div class="produto">
+                <div class="container-img-produto">
+                  <img src="img/card-televisao2.png" alt="televisao-1">
+                </div>
+                <div class="desconto">
+                  <span>9% off</span>
+                  <p>Oferta</p>
+                </div>
               </div>
-            </div>
-            <div>
-              <img src="img/card-notebook.png" alt="notebook">
-              <div class="desconto">
-                <span>9% off</span>
-                <p>Oferta</p>
-              </div>
-            </div>
-            <div>
-              <img src="img/card-televisao2.png" alt="televisao-2">
-              <div class="desconto">
-                <span>9% off</span>
-                <p>Oferta</p>
+              <div class="produto">
+                <div class="container-img-produto">
+                  <img src="img/card-notebook.png" alt="televisao-1">
+                </div>
+                <div class="desconto">
+                  <span>9% off</span>
+                  <p>Oferta</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card-footer">
-            <a href="">Ver mais</a>
-          </div>
-        </div><div class="col-2">
-          <div class="card-header">
-            <p class="titulo-card">Ofertas melhores avaliadas</p>
-          </div>
-          <div class="card-conteudo">
-
-          </div>
-          <div class="card-footer">
-
-          </div>
-        </div><div class="col-2">
-          <div class="card-header">
-            <p class="titulo-card">Ofertas melhores avaliadas</p>
-          </div>
-          <div class="card-conteudo">
-
-          </div>
-          <div class="card-footer">
-
-          </div>
-        </div> -->
-        <div class="col-3 card-1">
-          <div class="card-header">
-            <p class="titulo-card">Ofertas melhores avaliadas</p>
-          </div>
-          <div class="card-conteudo">
-            <div>
-              <img src="img/card-televisao.png" alt="televisao-1">
-              <div class="desconto">
-                <span>9% off</span>
-                <p>Oferta</p>
-              </div>
-              <img src="img/card-celular.png" alt="celular">
-              <div class="desconto">
-                <span>9% off</span>
-                <p>Oferta</p>
+          <div class="tamanho-card ">
+            <div class="card border-0"> <!--componente card-->
+              <h5 class="card-title">Ofertas do Dia: Até 40% de desconto</h5>
+              <img src="img/card-2.png" class="card-img-top" alt="card-2">
+              <div class="card-body">
+                <a href="#" class="">Ver ofertas</a>
               </div>
             </div>
-            <!-- <div>
-              <img src="img/card-celular.png" alt="celular">
-              <div class="desconto">
-                <span>9% off</span>
-                <p>Oferta</p>
+          </div> 
+          <div class="tamanho-card">
+            <div class="ofertas-linha">
+              <div class="produto">
+                <div class="container-img-produto">
+                  <img src="img/card-televisao.png" alt="televisao-1">
+                </div>
+                <div class="desconto">
+                  <span>9% off</span>
+                  <p>Oferta</p>
+                </div>
               </div>
-            </div> -->
-            <!-- <div>
-              <img src="img/card-notebook.png" alt="notebook">
-              <div class="desconto">
-                <span>9% off</span>
-                <p>Oferta</p>
+              <div class="produto">
+                <div class="container-img-produto img-celular">
+                  <img src="img/card-celular.png" alt="televisao-1">
+                </div>
+                <div class="desconto">
+                  <span>9% off</span>
+                  <p>Oferta</p>
+                </div>
               </div>
-            </div> -->
-            <div>
-              <img src="img/card-televisao2.png" alt="televisao-2">
-              <div class="desconto">
-                <span>9% off</span>
-                <p>Oferta</p>
+            </div>
+            <div class="ofertas-linha">
+              <div class="produto">
+                <div class="container-img-produto">
+                  <img src="img/card-televisao2.png" alt="televisao-1">
+                </div>
+                <div class="desconto">
+                  <span>9% off</span>
+                  <p>Oferta</p>
+                </div>
               </div>
-              <img src="img/card-notebook.png" alt="notebook">
-              <div class="desconto">
-                <span>9% off</span>
-                <p>Oferta</p>
+              <div class="produto">
+                <div class="container-img-produto">
+                  <img src="img/card-notebook.png" alt="televisao-1">
+                </div>
+                <div class="desconto">
+                  <span>9% off</span>
+                  <p>Oferta</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card-footer">
-            <a href="">Ver mais</a>
-          </div>
-        </div> 
-        <div class="col-3">
-          <div class="card" style="width: 18rem;">
-            <h5 class="card-title">Card title</h5>
-            <img src="img/card-2.png" class="card-img-top" alt="card-2">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div> 
-        <div class="col-2">
-          <div class="card">
-            <h5 class="card-title">Card title</h5>
-            <img src="img/card-4.png" class="card-img-top" alt="card-4">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="tamanho-card">
+            <div class="card border-0">
+              <h5 class="card-title">Mais vantagens, zero anuidade</h5>
+              <img src="img/card-4.png" class="card-img-top" alt="card-4">
+              <div class="card-body">
+                <a href="#" class="">Peça agora e ganhe 10 pontos</a>
+              </div>
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   </main>
-
-
-
-
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
