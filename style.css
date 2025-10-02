@@ -42,6 +42,25 @@ main {
   width: 1500px;
 }
 
+/*classes para controlar a posição*/
+.carousel-control-prev {
+  align-items: start;
+  left: -5%;
+  top: 30%;
+}
+
+.carousel-control-next {
+  align-items: start;
+  top: 30%;
+  right: -5%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 50px;
+  height: 50px;
+}
+/*---------------*/
+
 .carousel-item img {
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
   mask-repeat: no-repeat;
@@ -52,6 +71,10 @@ main {
   width: 1500px;
   display: flex;
   justify-content: space-around;
+}
+
+.translate-section-cards {
+  transform: translateY(-85%);
 }
 
 .tamanho-card {
