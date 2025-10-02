@@ -1,6 +1,7 @@
 :root {
   --color-gray-10: #ccc9c1;
   --color-red-10: #cc0c39;
+  --color-header: #131921;
 }
 
 * {
@@ -9,12 +10,40 @@
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p, a {
   margin: 0;
+  text-decoration: none;
 }
 
 body {
   background: #e3e6e6;
+}
+
+.navbar {
+  background: var(--color-header);
+  padding: 0;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.nav-item-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-item-icon {
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+
+.caixa-pesquisa {
+  background: #febd69;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 main {
@@ -23,12 +52,13 @@ main {
 
 .texto-header-normal {
   font-size: 14px; 
-  /* color: var(--color-gray-10)!important; */
+  color: white;
 }
 
 .texto-header-bold {
   font-size: 16px;
   font-weight: bold;
+  color: white
 }
 
 #section-cards {
@@ -71,6 +101,7 @@ main {
   width: 1500px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .translate-section-cards {
@@ -81,16 +112,24 @@ main {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  justify-content: center;
-  align-items: center;
   background: white;
   width: 23%;
-  padding: 16px;
+  padding: 12px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.texto-card {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .ofertas-linha {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -99,7 +138,8 @@ main {
 .produto {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 45%;
   height: 150px;
 }
 
@@ -128,6 +168,21 @@ main {
 .desconto p {
   color: var(--color-red-10);
 }
+
+#section-categorias {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: purple;
+}
+
+.container-section-categorias {
+  max-width: 1500px;
+
+}
+
+
+
 
 img {
   width: 100%;
