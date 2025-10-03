@@ -13,7 +13,7 @@
       <div class="container-fluid">
         <a class="navbar-brand logo-amazon" href="#">
           <div class="container-logo-amazon">
-            <img src="img/logo-amazon.png" alt="logo-amazon">
+            <img src="img/Amazon_logo_plain.svg" alt="logo-amazon">
           </div>
         </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -228,11 +228,12 @@
         </div>
         <div class="categoria-body">
           <button 
+            onclick="btnVoltar()"
             class="button btn-voltar">
             <img src="img/arrow-left.svg" alt="botao-voltar">
           </button>
           <div class="categoria-carousel">
-            <a class="categoria" href="">
+            <a class="categoria-item" href="">
               <div class="container-img-categoria">
                 <img src="img/categoria-dispositivos.jpg" alt="categoria-dispositivos">
               </div>
@@ -240,7 +241,7 @@
                 Dispositivos
               </span>
             </a>
-            <a class="categoria" href="">
+            <a class="categoria-item" href="">
               <div class="container-img-categoria">
                 <img src="img/categoria-cuidados.jpg" alt="categoria-dispositivos">
               </div>
@@ -248,7 +249,7 @@
                 Cuidados Pessoais
               </span>
             </a>
-            <a class="categoria" href="">
+            <a class="categoria-item" href="">
               <div class="container-img-categoria">
                 <img src="img/categoria-livros.jpg" alt="categoria-dispositivos">
               </div>
@@ -256,7 +257,39 @@
                 Livros
               </span>
             </a>
-            <a class="categoria" href="">
+            <a class="categoria-item" href="">
+              <div class="container-img-categoria">
+                <img src="img/categoria-nacional.avif" alt="categoria-dispositivos">
+              </div>
+              <span class="nome-categoria">
+                Compras Internacionais
+              </span>
+            </a>
+            <a class="categoria-item" href="">
+              <div class="container-img-categoria">
+                <img src="img/categoria-dispositivos.jpg" alt="categoria-dispositivos">
+              </div>
+              <span class="nome-categoria">
+                Dispositivos
+              </span>
+            </a>
+            <a class="categoria-item" href="">
+              <div class="container-img-categoria">
+                <img src="img/categoria-cuidados.jpg" alt="categoria-dispositivos">
+              </div>
+              <span class="nome-categoria">
+                Cuidados Pessoais
+              </span>
+            </a>
+            <a class="categoria-item" href="">
+              <div class="container-img-categoria">
+                <img src="img/categoria-livros.jpg" alt="categoria-dispositivos">
+              </div>
+              <span class="nome-categoria">
+                Livros
+              </span>
+            </a>
+            <a class="categoria-item" href="">
               <div class="container-img-categoria">
                 <img src="img/categoria-nacional.avif" alt="categoria-dispositivos">
               </div>
@@ -266,6 +299,7 @@
             </a>
           </div>
           <button
+            onclick="btnAvancar()"
             class="button btn-avancar">
             <img src="img/arrow-right.svg" alt="botao-avancar">
           </button>

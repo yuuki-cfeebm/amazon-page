@@ -200,7 +200,7 @@ main {
   background: white;
   width: 1500px;
   padding: 16px;
-
+  position: relative;
 }
 
 .categoria-header {
@@ -211,18 +211,24 @@ main {
 .categoria-body {
   display: flex;
   align-items: center;
-  position: relative;
   padding: 0 24px;
+  /* overflow-x: auto; */
+  /* overflow-y: hidden; */
+  /* scroll-behavior: smooth; */
 }
 
 .categoria-carousel {
   display: flex;
   align-items: center;
   gap: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
 }
 
-.categoria {
+.categoria-item {
   position: relative;
+  scroll-behavior: smooth;
 }
 
 .container-img-categoria {
