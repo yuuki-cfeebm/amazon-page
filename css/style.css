@@ -102,7 +102,7 @@ main {
 /*---------------*/
 
 .carousel-item img {
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%); /*Função css*/
   mask-repeat: no-repeat;
   mask-size: cover;
 }
@@ -115,7 +115,7 @@ main {
 }
 
 .translate-section-cards {
-  transform: translateY(-85%);
+  transform: translateY(-85%); /*função CSS*/
 }
 
 .tamanho-card {
@@ -300,11 +300,11 @@ footer {
   padding: 16px;
 }
 
-.texto-termos-politicas > p {
+.texto-termos-politicas > p { /*child combinator*/
   color: #ccc9c1;
 }
 
-.container-logo-amazon-footer img{
+.container-logo-amazon-footer img{ /*Descendant combinator*/
   width: 160px;
   object-fit: contain;
 }
