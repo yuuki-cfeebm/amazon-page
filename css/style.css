@@ -273,6 +273,78 @@ main {
 
 }
 
+footer {
+  width: 100%;
+  margin-top: 50px;
+}
 
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: var(--color-azul-escuro);
+  padding: 16px;
+}
 
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1500px;
+  padding: 16px
+}
 
+.container-termos-politicas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.texto-termos-politicas > p {
+  color: #ccc9c1;
+}
+
+.container-logo-amazon-footer img{
+  width: 160px;
+  object-fit: contain;
+}
+
+.container-redes-sociais {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-icon img{
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.container-FAQ {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items-FAQ {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.title-FAQ {
+  font-weight: bold;
+  color: white;
+}
+
+.body-FAQ {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.body-FAQ a{
+  color: #d1dddd;
+  font-size: 14px
+}
